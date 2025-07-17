@@ -1,0 +1,143 @@
+{
+  "menu": {
+    "about": "關於海流",
+    "shop": "購物商店",
+    "contact": "聯絡我們"
+  },
+  "about": {
+    "text": "海琉生態藝術工作室成員皆具有海洋生物相關背景以及博物館任職經驗，希望以科學、教育、藝術為中心，透過色彩繽紛的透明生物標本和原創的海洋生物文創商品，貼近與人的生活，和大家一起認識和尊重這些住在台灣周遭海域的好朋友，和我們一起”讓海洋不再陌生”讓大家對海洋不再陌生。"
+  },
+  "contact": {
+    "title": "聯絡海琉",
+    "company": "海琉生態藝術有限公司",
+    "vat": "統一編號：{{vat}}",
+    "phone": "服務電話：{{phone}}",
+    "address": "服務地址：{{address}}",
+    "email": "客服信箱：{{email}}",
+    "line": "官方LINE：{{line}}",
+    "message1": "如有產品相關問題或需要線上諮詢",
+    "message2": "歡迎透過右下角的聊天室讓我們即刻給您回覆",
+    "message3": "或者直接透過官方LINE或使用e-mail信箱告訴我們您的需求",
+    "thankyou": "感謝你們的支持與關心"
+  },
+  "valid": {
+    "customerName": "Please enter your name",
+    "email": {
+      "required": "Please enter your email",
+      "invalid": "Invalid email format"
+    },
+    "phone": "Please enter your phone number",
+    "shippingName": "Please enter the recipient's name",
+    "shippingPhone": "Please enter the recipient's phone number",
+    "deliveryMethod": "Please select a delivery method",
+    "paymentMethod": "Please select a payment method"
+  },
+  "form": {
+    "customerSectionTitle": "客戶資料",
+    "customerName": {
+      "label": "顧客名稱",
+      "placeholder": "請輸入顧客名稱"
+    },
+    "email": {
+      "label": "電子信箱",
+      "placeholder": "請輸入 Email"
+    },
+    "phone": {
+      "label": "電話號碼",
+      "placeholder": "請輸入手機號碼"
+    },
+    "birthday": {
+      "label": "生日"
+    },
+    "orderNote": {
+      "label": "訂單備註",
+      "placeholder": "請輸入備註內容"
+    },
+    "confirm": "確認送出",
+        "select": "請選擇"
+  },
+  "home": {
+    "product": {
+      "title": "桌上的迷你博物館—收集屬於你的生物圖鑑",
+      "description": "透明生物系列蒐羅了不同種類的生物，生物來源包含廢棄漁獲或次級漁獲、外來種生物或養殖業死亡的生物。海琉希望可以讓這些即將被報廢的生物殘骸可以再次被使用，讓他們的消逝的生命可以多一份價值。"
+    },
+    "contact": {
+      "subscribeSuccess": "感謝訂閱",
+      "emailError": "請輸入正確的 Email 格式"
+    },
+    "intro": {
+      "title": "透明生物標本是什麼?",
+      "description": "透明生物標本是一種獨特的生物標本製作方法，最先是用於科學研究用途，生物死亡後，在不破壞生物體完整的情況下，使用多種藥劑包含酒精、氫氧化鉀、酵素、染劑，經過染色與肌肉透明化過後，保存於甘油之中。不同的生物結構都有所差異，再加上製作標本的過程與環境等變因，每個人製作出來的標本都會有所不同，這也是每個透明生物標本都是世上獨一無二的，就和你我相同。"
+    },
+    "banner": {
+      "title": "讓海洋不再陌生"
+    }
+  },
+  "products": {
+    "categoryLabel": "分類",
+    "categories": {
+      "all": "全部",
+      "lab": "研究室",
+      "museum": "迷你博物館",
+      "bookstore": "海流書房",
+      "doll": "布偶系列",
+      "lifestyle": "生活系列"
+    },
+    "count": "共 {{count}} 項產品",
+    "addCart": "加入購物車",
+    "finishAdd": "已加入購物車",
+    "cleanAll": "清空購物車",
+    "total": "總金額"
+  },
+  "cart": {
+    "cart": "購物車",
+    "emptyCart": "購物車是空的",
+    "shopping": "去逛逛商店"
+  },
+  "shipping": {
+    "title": "送貨資料",
+    "sameAsCustomer": "收件人資料與客戶資料相同",
+    "name": "收件人名稱",
+    "namePlaceholder": "請輸入收件人名稱",
+    "phone": "收件人電話",
+    "phonePlaceholder": "請輸入收件人電話",
+    "deliveryMethod": "送貨方式",
+    "paymentMethod": "付款方式"
+  },
+  "login": {
+    "terms": {
+      "title": "海流工作室 會員服務與隱私權條款",
+      "intro": "為保障您的權益，請詳細閱讀下列條款內容。當您註冊成為會員並勾選同意，即表示您已充分理解並接受本條款之所有內容。",
+      "section1": {
+        "title": "一、會員資料的蒐集與使用",
+        "content": "為提供您個人化的會員服務、商品推薦、行銷活動，我們可能會蒐集您的姓名、電子郵件、聯絡電話、地址、購物紀錄等資訊。"
+      },
+      "section2": {
+        "title": "二、資料保護政策",
+        "content": "我們將採取合理的技術與管理措施，保障您的個人資料安全，並依法提供查詢、更正與刪除的權利。"
+      },
+      "section3": {
+        "title": "三、會員權益與義務",
+        "content": "會員可享有優惠、活動與專屬服務。請妥善保管您的帳號與密碼，若有違規行為，本公司有權終止會員資格。"
+      },
+      "section4": {
+        "title": "四、Cookie 與追蹤技術",
+        "content": "本網站可能使用 Cookie 分析行為並提供更佳體驗，您可透過瀏覽器管理相關設定。"
+      },
+      "section5": {
+        "title": "五、條款修改與通知",
+        "content": "海流工作室保留修訂本條款的權利，修訂後將公告於網站，不另行個別通知。"
+      },
+      "section6": {
+        "title": "六、聯絡方式",
+        "content": "如有任何問題，請洽 service@currentstudio.com 或撥打 0800-000-123。"
+      }
+    }
+  },
+  "product": {
+    "section1": {
+      "title": "一、會員資料的蒐集與使用",
+      "content": "為提供您個人化的會員服務、商品推薦、行銷活動，我們可能會蒐集您的姓名、電子郵件、聯絡電話、地址、購物紀錄等資訊。"
+    }
+  }
+}

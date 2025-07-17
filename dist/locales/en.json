@@ -1,0 +1,138 @@
+{
+  "menu": {
+    "about": "ABOUT",
+    "shop": "SHOP",
+    "contact": "CONTACT"
+  },
+  "contact": {
+    "title": "Contact Kairu",
+    "company": "Kairu Eco-Art Co., Ltd.",
+    "vat": "VAT Number: {{vat}}",
+    "phone": "Service Phone: {{phone}}",
+    "address": "Service Address: {{address}}",
+    "email": "Customer Email: {{email}}",
+    "line": "Official LINE: {{line}}",
+    "message1": "If you have any product-related questions or need online consultation",
+    "message2": "Feel free to contact us via the chat box in the bottom right corner",
+    "message3": "Or contact us directly through LINE or email to let us know your needs",
+    "thankyou": "Thank you for your support and concern"
+  },
+  "home": {
+    "product": {
+      "title": "A Mini Museum on Your Desk – Collect Your Own Species Atlas",
+      "description": "The Transparent Specimen Series features various species sourced from discarded bycatch, invasive species, or aquaculture deaths. Kairu aims to give new value to these lost lives through art."
+    },
+    "contact": {
+      "subscribeSuccess": "Thanks for subscribing",
+      "emailError": "Please enter the correct Email format"
+    },
+    "intro": {
+      "title": "What is a transparent biological specimen?",
+      "description": "Transparent biological specimens are a unique way of preserving animals. Originally used in research, the process involves clearing and staining tissues while preserving the animal's shape using enzymes, dyes, and glycerin. Each specimen is one-of-a-kind—just like you."
+    },
+    "banner": {
+      "title": "Let the ocean feel familiar"
+    }
+  },
+  "valid": {
+    "customerName": "Please enter your name",
+    "email": {
+      "required": "Please enter your email",
+      "invalid": "Invalid email format"
+    },
+    "phone": "Please enter your phone number",
+    "shippingName": "Please enter the recipient's name",
+    "shippingPhone": "Please enter the recipient's phone number",
+    "deliveryMethod": "Please select a delivery method",
+    "paymentMethod": "Please select a payment method"
+  },
+  "form": {
+    "customerSectionTitle": "Customer Information",
+    "customerName": {
+      "label": "Customer Name",
+      "placeholder": "Enter customer name"
+    },
+    "email": {
+      "label": "Email Address",
+      "placeholder": "Enter email address"
+    },
+    "phone": {
+      "label": "Phone Number",
+      "placeholder": "Enter mobile number"
+    },
+    "birthday": {
+      "label": "Birthday"
+    },
+    "orderNote": {
+      "label": "Order Note",
+      "placeholder": "Enter any additional notes"
+    },
+    "confirm": "Confirm",
+    "select": "Please select"
+  },
+  "products": {
+    "categoryLabel": "Category",
+    "categories": {
+      "all": "All",
+      "lab": "Lab",
+      "museum": "Mini Museum",
+      "bookstore": "Kairu Bookstore",
+      "doll": "Doll Series",
+      "lifestyle": "Lifestyle Series"
+    },
+    "count": "{{count}} products in total",
+    "addCart": "Add Cart",
+    "finishAdd": "Successfully added to shopping cart",
+    "cleanAll": "Empty Cart",
+    "total": "total"
+  },
+  "cart": {
+    "cart": "cart",
+    "emptyCart": "The shopping cart is empty.",
+    "shopping": "Go shopping"
+  },
+  "shipping": {
+    "title": "Shipping Info",
+    "sameAsCustomer": "Recipient is same as customer",
+    "name": "Recipient Name",
+    "namePlaceholder": "Enter recipient name",
+    "phone": "Recipient Phone",
+    "phonePlaceholder": "Enter recipient phone",
+    "deliveryMethod": "Delivery Method",
+    "paymentMethod": "Payment Method"
+  },
+
+  "about": {
+    "text": "The members of the Hailiu Ecological Art Studio all have a background in marine biology and experience working in museums. They hope to focus on science, education, and art, and to get closer to people's lives through colorful transparent biological specimens and original marine biological cultural and creative products. Together, we will get to know and respect these good friends who live in the waters around Taiwan, and together we will make the ocean no longer unfamiliar so that everyone will no longer be unfamiliar with the ocean."
+  },
+  "login": {
+    "terms": {
+      "title": "Current Studio Membership Terms and Privacy Policy",
+      "intro": " Please carefully read the following terms. By registering as a member and agreeing to the policy, you acknowledge and accept all its contents.",
+      "section1": {
+        "title": "1. Collection and Use of Member Information",
+        "content": "To provide personalized services and promotions, we may collect your name, email, phone number, address, and purchase history."
+      },
+      "section2": {
+        "title": "2. Data Protection Policy",
+        "content": "We implement reasonable technical and administrative measures to protect your data and provide rights to access, correct, or delete it."
+      },
+      "section3": {
+        "title": "3. Member Rights and Responsibilities",
+        "content": "Members are entitled to exclusive offers and services. Please keep your account secure. Misuse may result in membership suspension."
+      },
+      "section4": {
+        "title": "4. Cookies and Tracking Technologies",
+        "content": "We may use cookies to analyze behavior and enhance your experience. You can manage cookies in your browser settings."
+      },
+      "section5": {
+        "title": "5. Terms Revisions and Notifications",
+        "content": "Current Studio reserves the right to revise these terms. Updates will be posted on our website without individual notifications."
+      },
+      "section6": {
+        "title": "6. Contact Information",
+        "content": "For questions, please contact us at service@currentstudio.com or call 0800-000-123."
+      }
+    }
+  }
+}
