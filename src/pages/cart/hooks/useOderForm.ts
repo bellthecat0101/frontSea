@@ -1,16 +1,23 @@
 // hooks/useOrderForm.ts
 import { tradeApi } from "@/api/trade";
+import { useAppDispatch, useAppSelector } from "@/store/hooks";
+import { clearCart, total } from "@/store/slice/cartSlice";
 import type { FormValues, Order, OrderItem } from "@/types";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+
 import * as yup from "yup";
 
 export function useOrderForm(cartItems: OrderItem[]) {
+  const navigate = useNavigate();
   const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const dispatch = useAppDispatch();
+  const sum = useAppSelector(total);
 
   const schema = yup.object().shape({
     customerData: yup.object({
@@ -19,7 +26,7 @@ export function useOrderForm(cartItems: OrderItem[]) {
         .string()
         .email(t("valid.email.invalid"))
         .required(t("valid.email.required")),
-      phone: yup.string().required(t("valid.phone")),
+      phone: yup.string().matches(/^09\d{8}$/, t("valid.phone.invalid")).required(t("valid.phone")),
     }),
     shippingData: yup.object({
       shippingName: yup.string().required(t("valid.shippingName")),
@@ -58,13 +65,17 @@ export function useOrderForm(cartItems: OrderItem[]) {
       customerData: formData.customerData,
       shippingData: formData.shippingData,
       cartItems,
-      totalAmount: 10,
-      createdTime: new Date().toISOString(),
+      totalAmount: sum,
+      createdTime: Date.now(),
     };
-
     try {
-      await tradeApi.addOrder(payload);
-      reset();
+      const res = await tradeApi.addOrder(payload);
+      const orderId = res.data.id;
+      if (orderId) {
+        reset();
+        dispatch(clearCart());
+        navigate(`/orderRecords/${orderId}`);
+      }
     } catch (error: any) {
       setSubmitError(error.message || "未知錯誤");
     } finally {

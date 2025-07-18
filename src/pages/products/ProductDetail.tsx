@@ -23,7 +23,6 @@ export default function ProductDetail() {
   const { t } = useTranslation();
   useEffect(() => {
     productApi.getProductById(numericId).then((res) => {
-      
       setProduct(res.data);
     });
   }, []);
@@ -37,6 +36,7 @@ export default function ProductDetail() {
       price,
       quantity,
     };
+    setQuantity(1);
     dispatch(addToCart(cartItem));
     setShowToast(true);
   };

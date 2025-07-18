@@ -43,5 +43,5 @@ export interface FormValues {
 export interface Order extends FormValues {
   cartItems: OrderItem[]; // 購物車商品
   totalAmount: number;
-  createdTime: string;
+  createdTime: number;
 }

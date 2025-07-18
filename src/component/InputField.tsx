@@ -16,9 +16,9 @@ export default function InputField({
   error,
 }: Props) {
   return (
-    <div className="mb-4">
+    <div className="mb-4 relative">
       {label && (
-        <label className="block text-sm font-medium mb-1">{label}</label>
+        <label className="block text-sm font-medium mx-1">{label}</label>
       )}
       <input
         type={type}
@@ -26,7 +26,11 @@ export default function InputField({
         {...register(name)}
         className="form-input"
       />
-      {error && <p className="text-red-500 text-xs mt-1">{error}</p>}
+      {error && (
+        <p className="text-red-500 text-xs mt-1 absolute -bottom-4 left-0">
+          {error}
+        </p>
+      )}
     </div>
   );
 }
