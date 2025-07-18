@@ -7,7 +7,7 @@ import ProductSection from "./components/ProductSection";
 export default function Home() {
   const { t } = useTranslation();
   return (
-    <>
+    <div className="animate-fade-in-up">
       <BannerSection title={t("home.banner.title")} />
       <ProductSection
         title={t("home.product.title")}
@@ -21,6 +21,6 @@ export default function Home() {
         subscribeSuccess={t("home.contact.subscribeSuccess")}
         emailError={t("home.contact.emailError")}
       />
-    </>
+    </div>
   );
 }

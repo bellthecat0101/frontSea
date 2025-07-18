@@ -64,7 +64,7 @@ export default function ProductDetail() {
         />
         <QuantitySelector quantity={quantity} onChange={setQuantity} />
         <button
-          className="mt-4 px-6 py-2 bg-primary text-white rounded hover:bg-opacity-90 transition"
+          className="mt-4 px-6 py-2 btn"
           onClick={handleAddToCart}
         >
           {t("products.addCart")}

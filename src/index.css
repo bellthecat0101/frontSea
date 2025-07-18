@@ -21,6 +21,11 @@ h2 {
   @apply w-full px-3 py-2 border-b border-primary placeholder-primary text-xs
           focus:outline-none focus:ring-0 focus:border-gray-400;
 }
+
+.btn {
+  @apply bg-primary text-white rounded hover:bg-opacity-90 transition;
+}
+
 @layer utilities {
   .animate-fade-in-up {
     @apply opacity-0 translate-y-4 transition-all duration-700 ease-out;

@@ -8,13 +8,17 @@ import { Link, useParams } from "react-router-dom";
 import { Info, Section } from "./components/OrderSection";
 const OrderCompletePage = () => {
   const { t } = useTranslation();
-  const { id } = useParams<{ id: string }>();
+  const { id } = useParams<{ id?: string }>();
   const [order, setOrder] = useState<Order | null>(null);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
+    if (!id) {
+      setOrder(null);
+      setLoading(false);
+      return;
+    }
     const fetchOrder = async () => {
       try {
-        
         const res = await tradeApi.orderList({ id });
         setOrder(res.data);
       } catch (err) {
@@ -27,7 +31,7 @@ const OrderCompletePage = () => {
 
   return (
     <div className="min-h-[600px]">
-      {order ? (
+      {order && !loading ? (
         <div className="min-h-[600px] px-4">
           <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md font-noto-sans-tc text-primary mb-10">
             {/* Header */}

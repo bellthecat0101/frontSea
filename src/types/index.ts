@@ -45,3 +45,4 @@ export interface Order extends FormValues {
   totalAmount: number;
   createdTime: number;
 }
+declare module "react-lazy-load-image-component";

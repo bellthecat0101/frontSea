@@ -22,7 +22,7 @@ export default function OrderForm({ cartItems }: Props) {
 
       <button
         type="submit"
-        className="w-full py-2 px-4 bg-blue-600 text-white rounded disabled:opacity-50"
+        className="w-full py-2 px-4 btn"
         disabled={loading}
       >
         {loading ? "loading..." : "確認送出"}

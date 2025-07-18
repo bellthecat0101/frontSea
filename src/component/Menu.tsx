@@ -1,5 +1,6 @@
 import { useAppSelector } from "@/store/hooks";
 import { cartItemCount } from "@/store/slice/cartSlice";
+import clsx from "clsx";
 import { ShoppingCart } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -17,6 +18,12 @@ export default function Menu() {
     { to: "/products", label: "menu.shop" },
     { to: "/contact", label: "menu.contact" },
   ];
+  const navClass = clsx(
+    "px-4 lg:px-[50px] py-[10px] flex items-center justify-between text-primary opacity-90 text-sm transition-all duration-300 z-50",
+    {
+      "fixed top-0 left-0 w-full bg-white shadow-md": isSticky,
+    }
+  );
   useEffect(() => {
     const menuTop = menuRef.current?.offsetTop || 0;
 
@@ -31,12 +38,7 @@ export default function Menu() {
   return (
     <>
       <Carouse />
-      <nav
-        ref={menuRef}
-        className={`px-4 lg:px-[50px] py-[10px] flex items-center justify-between text-primary opacity-90 text-sm transition-all duration-300 z-50 ${
-          isSticky ? "fixed top-0 left-0 w-full bg-white shadow-md" : ""
-        }`}
-      >
+      <nav ref={menuRef} className={navClass}>
         <div className="flex justify-start items-center">
           <Link to="/">
             <img
@@ -69,7 +71,7 @@ export default function Menu() {
                     bg-red-600 text-white 
                     text-xs font-semibold leading-none 
                     w-5 h-5 min-w-[20px] rounded-full 
-                    flex items-center justify-center
+                    flex items-center justify-center  font-noto-sans-tc 
                     shadow-md
                   "
               >

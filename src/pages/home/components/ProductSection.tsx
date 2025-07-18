@@ -11,7 +11,10 @@ export default function ProductSection({ title, description }: props) {
       <div className="text-primary p-5 md:p-20 w-full lg:w-[50%]">
         <h3 className="text-[25px] pb-5">{title}</h3>
         <div className="opacity-60 text-base leading-7">{description}</div>
-        <Link to="/products" className="btn-primary mt-10">
+        <Link
+          to="/products"
+          className="btn-primary mt-10 hover:bg-opacity-90 transition"
+        >
           SHOP
         </Link>
       </div>
