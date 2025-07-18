@@ -40,7 +40,10 @@
       "required": "Please enter your email",
       "invalid": "Invalid email format"
     },
-    "phone": "Please enter your phone number",
+    "phone": {
+      "required": "Please enter your phone number",
+      "invalid": "Invalid phone format"
+    },
     "shippingName": "Please enter the recipient's name",
     "shippingPhone": "Please enter the recipient's phone number",
     "deliveryMethod": "Please select a delivery method",
@@ -85,6 +88,25 @@
     "finishAdd": "Successfully added to shopping cart",
     "cleanAll": "Empty Cart",
     "total": "total"
+  },
+  "orderComplete": {
+    "title": "Order Complete",
+    "thankYou": "Thank you for your purchase! Here is your order information.",
+    "customerData": "Customer Information",
+    "shippingData": "Shipping Information",
+    "orderItems": "Ordered Items",
+    "totalAmount": "Total Amount",
+    "orderNumber": "orderNumber",
+    "continueShopping": "continueShopping"
+  },
+  "order": {
+    "customerName": "Customer Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "shippingName": "Recipient Name",
+    "shippingPhone": "Recipient Phone",
+    "deliveryMethod": "Delivery Method",
+    "paymentMethod": "Payment Method"
   },
   "cart": {
     "cart": "cart",

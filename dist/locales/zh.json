@@ -21,16 +21,19 @@
     "thankyou": "感謝你們的支持與關心"
   },
   "valid": {
-    "customerName": "Please enter your name",
+    "customerName": "請輸入您的姓名",
     "email": {
-      "required": "Please enter your email",
-      "invalid": "Invalid email format"
+      "required": "請輸入您的電子信箱",
+      "invalid": "電子信箱格式錯誤"
     },
-    "phone": "Please enter your phone number",
-    "shippingName": "Please enter the recipient's name",
-    "shippingPhone": "Please enter the recipient's phone number",
-    "deliveryMethod": "Please select a delivery method",
-    "paymentMethod": "Please select a payment method"
+    "phone": {
+      "required": "請輸入您的手機號碼",
+      "invalid": "手機號碼格式錯誤"
+    },
+    "shippingName": "請輸入收件人姓名",
+    "shippingPhone": "請輸入收件人手機號碼",
+    "deliveryMethod": "請選擇配送方式",
+    "paymentMethod": "請選擇付款方式"
   },
   "form": {
     "customerSectionTitle": "客戶資料",
@@ -54,7 +57,7 @@
       "placeholder": "請輸入備註內容"
     },
     "confirm": "確認送出",
-        "select": "請選擇"
+    "select": "請選擇"
   },
   "home": {
     "product": {
@@ -89,6 +92,27 @@
     "cleanAll": "清空購物車",
     "total": "總金額"
   },
+
+  "orderComplete": {
+    "title": "訂單完成",
+    "thankYou": "感謝您的購買！以下是您的訂單資訊。",
+    "customerData": "顧客資料",
+    "shippingData": "收件資料",
+    "orderItems": "訂購商品",
+    "totalAmount": "總金額",
+    "orderNumber": "訂單編號",
+    "continueShopping": "繼續購物"
+  },
+  "order": {
+    "customerName": "顧客姓名",
+    "email": "電子信箱",
+    "phone": "電話號碼",
+    "shippingName": "收件人姓名",
+    "shippingPhone": "收件人電話",
+    "deliveryMethod": "配送方式",
+    "paymentMethod": "付款方式"
+  },
+
   "cart": {
     "cart": "購物車",
     "emptyCart": "購物車是空的",

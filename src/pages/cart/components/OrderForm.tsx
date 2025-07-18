@@ -1,8 +1,8 @@
 import type { OrderItem } from "@/types";
+import { useTranslation } from "react-i18next";
 import { useOrderForm } from "./../hooks/useOderForm";
 import CustomerSection from "./CustomerSection";
 import ShippingSection from "./ShippingSection";
-
 type Props = {
   cartItems: OrderItem[];
 };
@@ -10,7 +10,7 @@ type Props = {
 export default function OrderForm({ cartItems }: Props) {
   const { register, handleSubmit, errors, onSubmit, loading, submitError } =
     useOrderForm(cartItems);
-
+  const {t} = useTranslation();
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-10 p-10">
       {/* 買方資料 */}
@@ -25,7 +25,7 @@ export default function OrderForm({ cartItems }: Props) {
         className="w-full py-2 px-4 btn"
         disabled={loading}
       >
-        {loading ? "loading..." : "確認送出"}
+        {loading ? "loading..." :t('form.confirm')}
       </button>
     </form>
   );
