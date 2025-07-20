@@ -1,25 +1,24 @@
-// src/routes/AppRouter.jsx
-
-import About from "@/pages/About";
-import Cart from "@/pages/cart";
-import Contact from "@/pages/Contact";
-import Home from "@/pages/home/Home";
-import ProductDetail from "@/pages/products/ProductDetail";
-import Products from "@/pages/products/Products";
-import Login from "@/pages/user/Login";
-import OrderRecords from "@/pages/user/OrderRecords";
+import Loading from "@/component/Loading";
+import Home from "@/pages/home/Home"; // 同步載入首頁
+import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
+import { lazyPages } from "./lazyPages"; // 引入剛剛的 lazyPages 物件
+
 export default function AppRouter() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} /> {/* 首頁 */}
-      <Route path="/about" element={<About />} />
-      <Route path="/products" element={<Products />} />
-      <Route path="/productDetail/:id" element={<ProductDetail />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/orderRecords/:id" element={<OrderRecords />} />
-      <Route path="/login" element={<Login />} />
-    </Routes>
+    <Suspense fallback={<Loading />}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<lazyPages.About />} />
+        <Route path="/products" element={<lazyPages.Products />} />
+        <Route
+          path="/productDetail/:id"
+          element={<lazyPages.ProductDetail />}
+        />
+        <Route path="/cart" element={<lazyPages.Cart />} />
+        <Route path="/contact" element={<lazyPages.Contact />} />
+        <Route path="/orderRecords/:id" element={<lazyPages.OrderRecords />} />
+      </Routes>
+    </Suspense>
   );
 }

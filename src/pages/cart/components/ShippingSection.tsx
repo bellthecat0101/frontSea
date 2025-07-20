@@ -20,12 +20,14 @@ export default function ShippingSection({
       label: t("shipping.name"),
       placeholder: t("shipping.namePlaceholder"),
       type: "text",
+      isRequired: true
     },
     {
       name: "shippingPhone",
       label: t("shipping.phone"),
       placeholder: t("shipping.phonePlaceholder"),
       type: "tel",
+      isRequired: true
     },
   ];
   return (
@@ -53,6 +55,7 @@ export default function ShippingSection({
           type={field.type}
           register={register}
           error={errors?.[field.name as keyof ShippingData]?.message}
+          required= {field.isRequired}
         />
       ))}
 

@@ -18,7 +18,10 @@ export default function SelectField({
   return (
     <div className="mb-4">
       {label && (
-        <label className="block text-sm font-medium mb-1">{label}</label>
+        <label className="block text-sm font-medium mb-1">
+          <span className="text-red-500 pr-1">*</span>
+          {label}
+        </label>
       )}
       <select {...register(name)} className="form-input">
         <option value="">{t("form.select")}</option>

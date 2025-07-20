@@ -5,6 +5,7 @@ interface Props {
   placeholder?: string;
   register: any;
   error?: string;
+  required: boolean;
 }
 
 export default function InputField({
@@ -14,11 +15,15 @@ export default function InputField({
   placeholder,
   register,
   error,
+  required,
 }: Props) {
   return (
     <div className="mb-4 relative">
       {label && (
-        <label className="block text-sm font-medium mx-1">{label}</label>
+       
+        <label className="block text-sm font-medium mx-1">
+          {required && <span className="text-red-500 pr-1">*</span>}
+          {label}</label>
       )}
       <input
         type={type}

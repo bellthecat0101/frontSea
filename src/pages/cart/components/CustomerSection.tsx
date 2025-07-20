@@ -17,23 +17,27 @@ export default function CustomerSection({
       name: "customerName",
       label: t("form.customerName.label"),
       placeholder: t("form.customerName.placeholder"),
+      isRequired: true,
     },
     {
       name: "email",
       label: t("form.email.label"),
       placeholder: t("form.email.placeholder"),
       type: "email",
+      isRequired: true,
     },
     {
       name: "phone",
       label: t("form.phone.label"),
       placeholder: t("form.phone.placeholder"),
       type: "tel",
+      isRequired: true,
     },
     {
       name: "birthday",
       label: t("form.birthday.label"),
       type: "date",
+      isRequired: false,
     },
   ];
 
@@ -52,6 +56,7 @@ export default function CustomerSection({
           type={field.type}
           register={register}
           error={errors[field.name as keyof CustomerData]?.message}
+          required={field.isRequired}
         />
       ))}
 

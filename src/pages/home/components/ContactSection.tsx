@@ -24,9 +24,7 @@ export default function ContactSection({
     if (emailInput.trim() === "") return;
 
     if (!isValidEmail(emailInput)) {
-      console.log(showError);
       setError(true);
-      console.log(showError);
       return;
     }
     setError(false);
