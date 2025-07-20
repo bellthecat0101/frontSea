@@ -1,0 +1,1 @@
+import{u as s,j as t,i as a}from"./index-bEYw7b45.js";function i(){const{t:e}=s();return t.jsxs("div",{className:"flex flex-col justify-center items-center min-h-screen animate-fade-in-up ",children:[t.jsx("img",{src:a,alt:""}),t.jsx("p",{className:"text-primary w-[60%] mx-auto my-6 leading-7",children:e("about.text")})]})}export{i as default};
